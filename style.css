@@ -1,7 +1,7 @@
 :root{
 
     background-image:url(background.png) ;
-    background-size: 200vh;
+    background-size: 200vw;
     --blue:rgb(78 139 196);
     --lightBlue:rgb(150 203 252);
 }
