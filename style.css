@@ -1,11 +1,18 @@
 :root{
 
     background-image:url(background.png) ;
-    background-size: 150%;
-    --blue:rgb(78 139 196);
-    --lightBlue:rgb(150 203 252);
+    background-position-y: 0vh;
+    background-repeat:no-repeat;
+    background-size: 70%;
+    background-position-x: 15vw;
+    background-color: gray;
+    --blue:rgba(78, 139, 196, 0.5);
+    --lightBlue:rgba(1, 3, 5, 0.5);
 }
-
+body{
+    height: 300vh;
+    width: 1vw;
+}
 
 #navbar{
     position: fixed;
@@ -26,12 +33,18 @@
 #navbar>a:hover{
     background-color:var(--lightBlue) ;
 }
-
 #title{
+    font-family: 'steamPunk';
+}
+#title>.top{
     margin-left: 30vw;
     text-align: center;
     margin-top: 10vh;
     width: 40vw;
+    font-size: 1000%;
+    font-weight: lighter;
+    font-family: 'steamPunk';
+    
 }
 #title>h1{
     font-size: 4vb;
@@ -43,9 +56,16 @@
 #icons{
     position:fixed;
     scale: 125%;
-    left: 20vw;
-    top: 20vh;
+    left: 5vw;
+    top: 10vh;
+}
+#icons>h1{
+    font-size: 1.4vmax;
 }
 #icons>h1>a{
     color: black;
+}
+@font-face {
+    font-family: 'steamPunk';
+    src:url(Steamwheel-jE7gM.ttf);
 }
