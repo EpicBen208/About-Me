@@ -12,9 +12,9 @@
 
 .mouse{
     position: absolute;
-    width: 2%;
-    height: 2%;
-    transform: translate(-50%, 0%);
+    width: 5%;
+    height: 5%;
+    transform: translate(-40%, -10%);
     mix-blend-mode: white;
     pointer-events: none;
     z-index:3;
@@ -292,3 +292,4 @@ body{
     font-family: 'steamPunk';
     src:url(Steamwheel-jE7gM.ttf);
 }
+
