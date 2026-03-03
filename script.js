@@ -1,27 +1,4 @@
-const mouse=document.querySelector('.mouse')
 
-
-document.addEventListener('mouseenter',()=>{
-    mouse.style.display='block';
-});
-
-document.addEventListener('mouseleave',()=>{
-    mouse.style.display='none';
-});
-
-
-const mouse2=document.querySelector('.mouse2')
-
-
-document.addEventListener('mouseenter',()=>{
-    mouse2.style.display='block';
-});
-
-document.addEventListener('mouseleave',()=>{
-    mouse2.style.display='none';
-});
-
-document.addEventListener('mousemove',TrackCursor);
 
 function TrackCursor(e){
     let x = e.pageX;
@@ -34,3 +11,15 @@ function TrackCursor(e){
     mouse2.style.top=`${y}px`;
 }
 
+const today= new Date();
+const born = new Date('2008-09-04');
+let age = today.getFullYear()-born.getFullYear();
+let agem = today.getMonth()-born.getFullYear();
+let aged = today.getDay()-born.getFullYear();
+
+if (agem<0|| agem===0&&aged<0){
+    age--;
+}
+
+
+document.getElementById("age").textContent = age + document.getElementById("age").textContent;

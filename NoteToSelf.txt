@@ -1,0 +1,4 @@
+in css:
+    background color is in :root
+    background image is in body
+    
