@@ -1,4 +1,5 @@
-@media (min-width: 1000) {
+@media screen{
+
         
 
     :root{
@@ -51,7 +52,7 @@
         left: 0;
         top: 0;
         display: grid;
-        grid-template: repeat(1,5vh)/repeat(5, 20vw);
+        grid-template: repeat(1,5vh)/repeat(4, 25vw);
         text-shadow:var(--whiteShadow);
         border: 1px solid black;
         z-index: 2;
@@ -91,7 +92,8 @@
     }
     #icons{
         position:fixed;
-        scale: 1vb;
+        word-wrap:normal;
+        width:10%;
         left: 5vw;
         top: 10vh;
     }
@@ -294,29 +296,16 @@
         font-family: 'steamPunk';
         src:url(Steamwheel-jE7gM.ttf);
     }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 999px) {
-    :root{
-    background-color: black;
+@media (max-width: 1000px) {
     
-        --navbar:rgba(149, 112, 77,0.5);
-        --navbarHover:rgba(0, 0, 0, 0.5);
-        --whiteShadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
-        --blackShadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
-    }
     body{
-        
+        margin: 0%;
+        width: 100%;
+        height: 100%;
+        margin-top:-10vh;
+        background-color: black;
         background-image: url("theme/background.jpg");
         background-size: 100%;
         background-position-y:10%;
@@ -329,7 +318,7 @@
         left: 0;
         top: 0;
         display: grid;
-        grid-template: repeat(1,5vh)/repeat(5, 20vw);
+        grid-template: repeat(1,5vh)/repeat(4, 25vw);
         text-shadow:var(--whiteShadow);
         border: 1px solid black;
         z-index: 2;
