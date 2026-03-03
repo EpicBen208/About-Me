@@ -1,315 +1,441 @@
-:root{
+@media (min-width: 1000) {
+        
+
+    :root{
+
+        
+        background:repeating-linear-gradient(
+        90deg,
+        #808080,
+        #808080 25%,
+        #000000 25%,
+        #000000 75%
+        );
+        
+        --navbar:rgba(149, 112, 77,0.5);
+        --navbarHover:rgba(0, 0, 0, 0.5);
+        --whiteShadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+        --blackShadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
+    }
+
+    /*Theme images and background*/
+    body{
+        height: 150%;
+        width: 99%;
+        background-image: url('theme/background.jpg');
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-attachment:fixed;
+        background-position-y: center;
+        background-position-x: 50%;
+    }
+    #Themeimg1>img{
+        position: fixed;
+        top: 73%;
+        left: 5%;
+        width:10%;
+        
+
+    }
+    #Themeimg2>img{
+        position: fixed;
+        width: 20%;
+        margin-top: 0%;
+        margin-left: 80%;
+        rotate: 45deg;
+
+    }
+
+    #navbar{
+        position: fixed;
+        left: 0;
+        top: 0;
+        display: grid;
+        grid-template: repeat(1,5vh)/repeat(5, 20vw);
+        text-shadow:var(--whiteShadow);
+        border: 1px solid black;
+        z-index: 2;
+        
+    }
+    #navbar>a{
+        background-color:var(--navbar);
+        text-align: center;
+        color: black;
+        text-decoration:none;
+        font-size:1.2vb;
+    }
+    #navbar>a:hover{
+        background-color:var(--navbarHover);
+    }
+    #title{
+        font-family: 'steamPunk';
+    }
+    #title>.top{
+        
+        text-shadow:var(--whiteShadow);
+        margin-left: 30vw;
+        text-align: center;
+        margin-top: 10vh;
+        width: 40vw;
+        font-size: 10vb;
+        font-weight: lighter;
+        font-family: 'steamPunk';
+        
+    }
+    #title>h1{
+        font-size: 1vb;
+    }
+    #title>p{
+        font-size: 2vb;
+        text-align: left;
+    }
+    #icons{
+        position:fixed;
+        scale: 1vb;
+        left: 5vw;
+        top: 10vh;
+    }
+    #icons>h1{
+        font-size: 1.4vmax;
+        font-weight: lighter;
+        font-family: 'steamPunk';
+    }
+    #icons>h1>a{
+        color: black;
+    }
+
+    #whoAmITitle{
+
+        text-shadow:var(--whiteShadow);
+        margin-left: 52vw;
+        width: 20vw;
+        height: 5vh;
+        font-size: 5vb;
+        text-align: center;
+        word-wrap: break-word;
+        font-weight: lighter;
+        font-family: 'steamPunk';
+    }
+    #whoAmI{
+        
+        text-shadow:var(--blackShadow);
+        color: rgb(255, 255, 255);
+        border: 1px solid black;
+        background-color: rgba(99, 47, 13, 0.507);
+        margin-left: 52vw;
+        width: 20vw;
+        height: 30vh;
+        font-size: 2vb;
+        word-wrap: break-word;
+    }
+
+
+    #likesAndDislikesTitle{
+
+        text-shadow:var(--whiteShadow);
+        margin-left: 27vw;
+        width: 20vw;
+        height: 5vh;
+        font-size: 5vb;
+        text-align: center;
+        word-wrap: break-word;
+        font-weight: lighter;
+        font-family: 'steamPunk';
+    }
+    #likesAndDislikes{
+        
+        text-shadow:var(--blackShadow);
+        color: rgb(255, 255, 255);
+        border: 1px solid black;
+        background-color: rgba(99, 47, 13, 0.507);
+        margin-left: 27vw;
+        width: 20vw;
+        height: 30vh;
+        font-size: 2vb;
+        word-wrap: break-word;
+    }
+
+    #grid_games{
+        text-shadow:var(--whiteShadow);
+        margin-left: 25vw;
+        width: 50vw;
+        height: 100vh;
+        display:grid;
+        grid-template: repeat(60,auto)/repeat(3,auto);
+        
+    }
+    #gameIntro{
+        text-shadow:var(--blackShadow);
+        color: white;
+        font-family: 'steampunk';
+        font-size: 2vb;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    #grid_games>div{
+        
+        border: 1px solid black;
+        scale: 100%;
+    }
+    #subnautica_1{
+        margin-left: 25%;
+        rotate: -10deg;
+    }
+
+    #subnautica_3{
+        padding-top: 50%;
+        padding-left: 60%;
+        rotate: 5deg;
+        z-index: -1;
+    }
+    #subnautica_5{
+        margin-top: 70%;
+        margin-left: -65%;
+        rotate: -13deg;
+    }
+    #subnautica_4{
+        margin-top: 50%;
+        margin-left: -105%;
+        rotate: 23deg;
+    }
+    #subnautica_2{
+        margin-top: -14%;
+        margin-left: 105%;
+        rotate: -3deg;
+    }
+
+    #raft_2{
+        rotate: -10deg;
+        margin-left: -30%;
+    }
+    #raft_1{
+        position: relative;
+        z-index: 2;
+        rotate: 20deg;
+
+    }
+    #raft_3{
+        rotate: 10deg;
+        margin-top: 10%;
+        margin-left: -10%;
+    }
+    #dst_1{
+        margin-top: 10%;
+        margin-left: 12%;
+        rotate: 10deg;
+    }
+    #dst_2{
+        rotate: -12deg;
+    }
+    #dst_3{
+        margin-left: 0%;
+        rotate: 30deg;
+        z-index: -1;
+    }
+    #dst_4{rotate: -13deg;}
+
+    #subnautica{
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-column-end: 5;
+        grid-row-end: 2;
+        text-align: center;
+        z-index: 1;
+        font-size: 3vb;
+    }
+    #raft{
+        grid-column-start: 1;
+        grid-row-start: 4;
+        grid-column-end: 5;
+        grid-row-end: 4;
+        text-align: center;
+        z-index: 1;
+        font-size: 3vb;
+    }
+
+    #dst{
+        grid-column-start: 1;
+        grid-row-start: 6;
+        grid-column-end: 5;
+        grid-row-end: 6;
+        text-align: center;
+        z-index: 1;
+        font-size: 3vb;
+    }
+    #fo{
+        grid-column-start: 1;
+        grid-row-start: 8;
+        grid-column-end: 5;
+        grid-row-end: 8;
+        text-align: center;
+        z-index: 1;
+        font-size: 3vb;
+    }
+    #fo_1{
+        margin-left: 20%;
+        rotate: 15deg;
+    }
+    #fo_2{
+        margin-top: 10%;
+        rotate: -16deg;
+    }
+    #fo_3{
+        margin-top: 10%;
+        rotate: 25deg;
+    }
+    #fo_4{
+        margin-top: 10%;
+        margin-left: -13%;
+        rotate: -15deg;
+        z-index: -1;
+    }
+    @font-face {
+        font-family: 'steamPunk';
+        src:url(Steamwheel-jE7gM.ttf);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 999px) {
+    :root{
+    background-color: black;
+    
+        --navbar:rgba(149, 112, 77,0.5);
+        --navbarHover:rgba(0, 0, 0, 0.5);
+        --whiteShadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+        --blackShadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
+    }
+    body{
+        
+        background-image: url("theme/background.jpg");
+        background-size: 100%;
+        background-position-y:10%;
+        background-repeat: no-repeat;
+    }
+
+
+    #navbar{
+        position: fixed;
+        left: 0;
+        top: 0;
+        display: grid;
+        grid-template: repeat(1,5vh)/repeat(5, 20vw);
+        text-shadow:var(--whiteShadow);
+        border: 1px solid black;
+        z-index: 2;
+        
+    }
+    #navbar>a{
+        background-color:var(--navbar);
+        text-align: center;
+        color: black;
+        text-decoration:none;
+        font-size:1.2vb;
+    }
+    #navbar>a:hover{
+        background-color:var(--navbarHover);
+    }
+    #title{
+        font-family: 'steamPunk';
+    }
+    #title>.top{
+        
+        text-shadow:var(--whiteShadow);
+        margin-left: 30vw;
+        text-align: center;
+        margin-top: 10vh;
+        width: 40vw;
+        font-weight: lighter;
+        font-family: 'steamPunk';
+        
+    }
+
+    #Themeimg1{
+        display: none;
+    }
+    #Themeimg2{
+        display: none;
+    }
+    #icons{
+        position: relative;
+        height:20vb;
+        width: 80%;
+        left: 5vw;
+    }
+    #icons>h1{
+        font-size: 180%;
+        word-wrap: break-word;
+        font-weight: lighter;
+        font-family: 'steamPunk';
+    }
+    #icons>h1>a{
+        color: rgb(133, 133, 133);
+    }
+
+    #whoAmITitle{
+
+        text-shadow:var(--whiteShadow);
+        margin-left: 8vw;
+        width: 80vw;
+        height: 5vh;
+        font-size: 5vb;
+        text-align: center;
+        word-wrap: break-word;
+        font-weight: lighter;
+        font-family: 'steamPunk';
+    }
+    #whoAmI{
+        
+        text-shadow:var(--blackShadow);
+        color: rgb(255, 255, 255);
+        border: 1px solid black;
+        background-color: rgba(99, 47, 13, 0.507);
+        margin-left: 8vw;
+        width: 80vw;
+        height: 30vh;
+        font-size: 2vb;
+        word-wrap: break-word;
+    }
+
+
+    #likesAndDislikesTitle{
+
+        text-shadow:var(--whiteShadow);
+        margin-left: 8vw;
+        width: 80vw;
+        height: 5vh;
+        font-size: 5vb;
+        text-align: center;
+        word-wrap: break-word;
+        font-weight: lighter;
+        font-family: 'steamPunk';
+    }
+    #likesAndDislikes{
+        
+        text-shadow:var(--blackShadow);
+        color: rgb(255, 255, 255);
+        border: 1px solid black;
+        background-color: rgba(99, 47, 13, 0.507);
+        margin-left: 8vw;
+        width: 80vw;
+        height: 30vh;
+        font-size: 2vb;
+        word-wrap: break-word;
+    }
 
     
-    background:repeating-linear-gradient(
-    90deg,
-    #808080,
-    #808080 25%,
-    #000000 25%,
-    #000000 75%
-    );
-    
-    --navbar:rgba(149, 112, 77,0.5);
-    --navbarHover:rgba(0, 0, 0, 0.5);
-    --whiteShadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
-    --blackShadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
-}
-
-/*Theme images and background*/
-body{
-    height: 150vh;
-    width: 99%;
-    background-image: url('theme/background.jpg');
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-attachment:fixed;
-    background-position-y: center;
-    background-position-x: 50%;
-}
-#Themeimg1{
-    position: fixed;
-    top: 63vh;
-
-}
-#Themeimg2{
-    position: fixed;
-    scale: 40%;
-    top: -10vh;
-    left: 57vw;
-    rotate: 45deg;
-
-}
-
-
-
-
-#navbar{
-    position: fixed;
-    left: 0;
-    top: 0;
-    display: grid;
-    grid-template: repeat(1,5vh)/repeat(5, 20vw);
-    text-shadow:var(--whiteShadow);
-    border: 1px solid black;
-    z-index: 2;
-    
-}
-#navbar>a{
-    background-color:var(--navbar);
-    text-align: center;
-    color: black;
-    text-decoration:none;
-    font-size:1.2vb;
-}
-#navbar>a:hover{
-    background-color:var(--navbarHover);
-}
-#title{
-    font-family: 'steamPunk';
-}
-#title>.top{
-    
-    text-shadow:var(--whiteShadow);
-    margin-left: 30vw;
-    text-align: center;
-    margin-top: 10vh;
-    width: 40vw;
-    font-size: 10vb;
-    font-weight: lighter;
-    font-family: 'steamPunk';
-    
-}
-#title>h1{
-    font-size: 1vb;
-}
-#title>p{
-    font-size: 2vb;
-    text-align: left;
-}
-#icons{
-    position:fixed;
-    scale: 1vb;
-    left: 5vw;
-    top: 10vh;
-}
-#icons>h1{
-    font-size: 1.4vmax;
-    font-weight: lighter;
-    font-family: 'steamPunk';
-}
-#icons>h1>a{
-    color: black;
-}
-
-
-
-
-
-#whoAmITitle{
-
-    text-shadow:var(--whiteShadow);
-    margin-left: 52vw;
-    width: 20vw;
-    height: 5vh;
-    font-size: 5vb;
-    text-align: center;
-    word-wrap: break-word;
-    font-weight: lighter;
-    font-family: 'steamPunk';
-}
-#whoAmI{
-    
-    text-shadow:var(--blackShadow);
-    color: rgb(255, 255, 255);
-    border: 1px solid black;
-    background-color: rgba(99, 47, 13, 0.507);
-    margin-left: 52vw;
-    width: 20vw;
-    height: 30vh;
-    font-size: 2vb;
-    word-wrap: break-word;
-}
-
-
-#likesAndDislikesTitle{
-
-    text-shadow:var(--whiteShadow);
-    margin-left: 27vw;
-    width: 20vw;
-    height: 5vh;
-    font-size: 5vb;
-    text-align: center;
-    word-wrap: break-word;
-    font-weight: lighter;
-    font-family: 'steamPunk';
-}
-#likesAndDislikes{
-    
-    text-shadow:var(--blackShadow);
-    color: rgb(255, 255, 255);
-    border: 1px solid black;
-    background-color: rgba(99, 47, 13, 0.507);
-    margin-left: 27vw;
-    width: 20vw;
-    height: 30vh;
-    font-size: 2vb;
-    word-wrap: break-word;
-}
-
-
-
-
-
-
-
-
-
-
-#grid_games{
-    text-shadow:var(--whiteShadow);
-    margin-left: 25vw;
-    width: 50vw;
-    height: 100vh;
-    display:grid;
-    grid-template: repeat(60,auto)/repeat(3,auto);
-    
-}
-#gameIntro{
-    text-shadow:var(--blackShadow);
-    color: white;
-    font-family: 'steampunk';
-    font-size: 2vb;
-    grid-column-start: 1;
-    grid-column-end: 5;
-}
-
-#grid_games>div{
-    
-    border: 1px solid black;
-    scale: 100%;
-}
-#subnautica_1{
-    margin-left: 25%;
-    rotate: -10deg;
-}
-
-#subnautica_3{
-    padding-top: 50%;
-    padding-left: 60%;
-    rotate: 5deg;
-    z-index: -1;
-}
-#subnautica_5{
-    margin-top: 70%;
-    margin-left: -65%;
-    rotate: -13deg;
-}
-#subnautica_4{
-    margin-top: 50%;
-    margin-left: -105%;
-    rotate: 23deg;
-}
-#subnautica_2{
-    margin-top: -14%;
-    margin-left: 105%;
-    rotate: -3deg;
-}
-
-#raft_2{
-    rotate: -10deg;
-    margin-left: -30%;
-}
-#raft_1{
-    position: relative;
-    z-index: 2;
-    rotate: 20deg;
-
-}
-#raft_3{
-    rotate: 10deg;
-    margin-top: 10%;
-    margin-left: -10%;
-}
-#dst_1{
-    margin-top: 10%;
-    margin-left: 12%;
-    rotate: 10deg;
-}
-#dst_2{
-    rotate: -12deg;
-}
-#dst_3{
-    margin-left: 0%;
-    rotate: 30deg;
-    z-index: -1;
-}
-#dst_4{rotate: -13deg;}
-
-#subnautica{
-    grid-column-start: 1;
-    grid-row-start: 2;
-    grid-column-end: 5;
-    grid-row-end: 2;
-    text-align: center;
-    z-index: 1;
-    font-size: 3vb;
-}
-#raft{
-    grid-column-start: 1;
-    grid-row-start: 4;
-    grid-column-end: 5;
-    grid-row-end: 4;
-    text-align: center;
-    z-index: 1;
-    font-size: 3vb;
-}
-
-#dst{
-    grid-column-start: 1;
-    grid-row-start: 6;
-    grid-column-end: 5;
-    grid-row-end: 6;
-    text-align: center;
-    z-index: 1;
-    font-size: 3vb;
-}
-#fo{
-    grid-column-start: 1;
-    grid-row-start: 8;
-    grid-column-end: 5;
-    grid-row-end: 8;
-    text-align: center;
-    z-index: 1;
-    font-size: 3vb;
-}
-#fo_1{
-    margin-left: 20%;
-    rotate: 15deg;
-}
-#fo_2{
-    margin-top: 10%;
-    rotate: -16deg;
-}
-#fo_3{
-    margin-top: 10%;
-    rotate: 25deg;
-}
-#fo_4{
-    margin-top: 10%;
-    margin-left: -13%;
-    rotate: -15deg;
-    z-index: -1;
-}
-@font-face {
-    font-family: 'steamPunk';
-    src:url(Steamwheel-jE7gM.ttf);
-}
-
-
-@media (max-width: 1000px) {
-    
-
-
-
-
+    @font-face {
+        font-family: 'steamPunk';
+        src:url(Steamwheel-jE7gM.ttf);
+    }
 }
